@@ -1,0 +1,66 @@
+:root {
+  color-scheme: light;
+  --paper: #f3f0ea;
+  --ink: #1e1c19;
+  --muted: #5c564f;
+  --line: #e3dcd2;
+  --accent: #31404d;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: Figtree, system-ui, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.5;
+}
+
+main {
+  max-width: 38rem;
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem 5rem;
+}
+
+.mark, nav a, h1, h2 {
+  font-family: Newsreader, Georgia, serif;
+}
+
+.mark {
+  margin: 0 0 1.5rem;
+  letter-spacing: 0.04em;
+}
+
+h1 {
+  margin: 0 0 1rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+h2 {
+  margin: 2.25rem 0 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+p { margin: 0 0 1rem; color: var(--ink); }
+
+.lede, .dated { color: var(--muted); }
+
+nav { display: flex; gap: 1.25rem; margin-top: 2rem; }
+
+a { color: var(--accent); }
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+}
